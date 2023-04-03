@@ -1,0 +1,32 @@
+{% extends "base.html" %} {% block content %} {% load static %}
+
+<div class="contentedit">  
+    <img
+      class="logoedit"
+      src="{% static 'img/twitter.png' %}"
+      alt=""    
+    />
+    <h1>Edit</h1>
+</div>
+<div class="edit_form">
+<form action="/edit/{{ post.id }}/" 
+    method="POST" 
+    enctype="multipart/form-data">
+  {% csrf_token %}
+  <input  id = 'inputedit'type="text" name="name" value="{{ post.name }}" required /><br /><br />
+  <!-- <input type="textarea" name="body", value="{{post.body}}"/> -->
+  <textarea name="body" placeholder="Tell us anything" value ="{{post.body}}" required></textarea>
+  <br /><br />
+  <input type="file" value="update" /><br>
+  {% if post.image %}
+  <img src="{{ post.image.urls }}" alt="" />
+  {% endif %}
+  <div>
+    <div class="editbutton">
+    <a href="/"><input type="button" value="Cancel" /></a><br><br>
+    <input type="submit" value="update" />
+    </div>
+  </div>
+</form>
+</div>
+{% endblock %}
