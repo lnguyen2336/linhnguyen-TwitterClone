@@ -21,6 +21,6 @@ class Post(models.Model):
         "image", blank=True, db_index = True
     )
 
-    likes = models.PositiveIntegerField(
-        "Likes", default=0, null=True, blank=True
+    likecount = models.IntegerField(
+        "likes_count", default=0, null=True, blank=True
     )

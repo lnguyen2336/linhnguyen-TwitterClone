@@ -48,7 +48,7 @@ post
     position: relative;
     display: flex;
     border-bottom: 1px solid #ccc;
-    padding: 20px 40px;
+    padding: 26px 34px;
     list-style: none;
 }
 
@@ -199,9 +199,10 @@ input#inputedit {
 }
 
 
-.like {
-    margin-top: -6%;
-    padding-left: 13%;
+.likebt img{
+    margin-top: 6%;
+  
+    width: 6%;
 }
 
 input#postinput {

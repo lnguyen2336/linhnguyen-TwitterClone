@@ -48,17 +48,24 @@
             alt=""
           />
           {% endif %}
-        </div></br>
+          <div class="likebt">
+            <a href="/like/{{post.id}}"><img src="./static/img/like.png" alt=""></a>
+            {{post.likecount}}
+       
+           </div>
         
+        </div></br>
+       
       </li>
-      <div class="like">
+      <!-- <div class="like">
         <form action="{% url 'like' post.pk %}" method="post" name="like">
             {% csrf_token %}
             <button class="button" type="submit" value="post.id">
                 &#10084;
             </button> {{post.likes}}
         </form>
-    </div>
+    </div> -->
+    
       {% endfor %}
     </ul>
   </section>
