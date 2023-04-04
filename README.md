@@ -1,6 +1,7 @@
 # linhnguyen-TwitterClone
 [LIVE DEMO]
-(https://linhnguyen-twitterclone.lnguyen2336.repl.co/)![Screenshot 2023-04-03 at 10 37 22 PM](https://user-images.githubusercontent.com/123962309/229681242-fe2ed1dd-615c-425a-94a1-c580a908d963.png)
+(https://linhnguyen-twitterclone.lnguyen2336.repl.co/)
+![Screenshot 2023-04-03 at 10 37 22 PM](https://user-images.githubusercontent.com/123962309/229681242-fe2ed1dd-615c-425a-94a1-c580a908d963.png)
 
 # TECH USED DJANGO
 
